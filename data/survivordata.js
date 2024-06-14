@@ -1,13 +1,46 @@
-const killerList = [
+const survivorsList = [
   {
     name:'德怀特·费菲尔德',
-    sex:'男',
+    gender:'男',
     skills:{
       one:'技能1',
       two:'技能2',
       three:'技能3'
     },
-    img_url:'',
+    img_url:'../analyse/assets/img/占位图片.png',
+    introduction:'运气人类'
+  },
+  {
+    name:'梅格·托马斯',
+    gender:'女',
+    skills:{
+      one:'技能1',
+      two:'技能2',
+      three:'技能3'
+    },
+    img_url:'../analyse/assets/img/占位图片.png',
+    introduction:'运气人类'
+  },
+  {
+    name:'克劳黛特·莫莱',
+    gender:'女',
+    skills:{
+      one:'技能1',
+      two:'技能2',
+      three:'技能3'
+    },
+    img_url:'../analyse/assets/img/占位图片.png',
+    introduction:'运气人类'
+  },
+  {
+    name:'杰克·朴',
+    gender:'男',
+    skills:{
+      one:'技能1',
+      two:'技能2',
+      three:'技能3'
+    },
+    img_url:'../analyse/assets/img/占位图片.png',
     introduction:'运气人类'
   }
 ]

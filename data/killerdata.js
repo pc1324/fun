@@ -1,7 +1,7 @@
-const killerList = [
+const killersList = [
   {
     occupation:'陷阱杀手',
-    name:'埃文·麦克米伦',
+    name:'埃文·迈克米伦',
     difficulty:'简单',
     skills:{
       one:'技能1',

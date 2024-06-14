@@ -3,15 +3,18 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 ol li,
 ul li {
   list-style: none;
 }
+
 body {
   background: linear-gradient(to bottom, #999, #000);
   background-repeat: no-repeat;
   min-height: 1050px;
 }
+
 /* 网页头部 */
 .head {
   position: relative;
@@ -21,10 +24,12 @@ body {
   height: 80px;
   background-color: black;
 }
+
 .head h1 {
   text-align: center;
   color: white;
 }
+
 .head .logo {
   position: absolute;
   top: 0;
@@ -33,9 +38,11 @@ body {
   width: 80px;
   /* 警惕塌陷margin-top */
 }
+
 .head .logo h1 {
   margin-top: 0;
 }
+
 .head .logo a {
   display: block;
   height: 80px;
@@ -45,15 +52,18 @@ body {
   background-color: white;
   font-size: 0;
 }
+
 /* 导航栏 */
 .nav {
   background-color: pink;
 }
+
 .nav ul {
   display: flex;
   justify-content: space-around;
   height: 100px;
 }
+
 .nav ul li {
   background-color: #ccc;
   flex: 1;
@@ -66,9 +76,47 @@ body {
   cursor: pointer;
   /* li 活动状态 */
 }
+
 .nav ul li:hover {
   background-color: #c2c0c0;
 }
+
 .nav ul li.active {
   color: red;
+}
+
+/* 网页身体：逃生者、逃生者技能、杀手技能 */
+.body {
+  padding: 30px;
+  background-color: pink;
+}
+
+.body .content {
+  background-color: white;
+  width: 100%;
+  min-height: 600px;
+  border-radius: 15px;
+}
+
+.body .content .survivor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.body .content .survivor .survivor-avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  width: 160px;
+  border: 1px solid skyblue;
+}
+
+.body .content .survivor .survivor-avatar img {
+  width: 70%;
+  border-radius: 50%;
+  border: 1px solid #000;
 }
