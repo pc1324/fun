@@ -159,6 +159,9 @@ body {
 .body .content .killer .left ul li:nth-child(9) {
   background-color: #00c8ff;
 }
+.body .content .killer .left ul li span {
+  text-align: center;
+}
 .body .content .killer .right {
   flex: 9;
   height: 2700px;
@@ -178,7 +181,8 @@ body {
 .body .content .killer .right ul li .killer-avatar {
   width: 150px;
   height: 150px;
-  background-color: orange;
+  border-radius: 50%;
+  border: 5px solid red;
 }
 .body .content .killer .right ul li .killer-avatar img {
   width: 100%;

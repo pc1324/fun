@@ -9,6 +9,7 @@ document.querySelector('.nav ul').addEventListener('click', function (e) {
     e.target.classList.add('active')
   }
 })
+
 // 渲染页面函数
 function renderPage(number) {
   number = number || "0"
@@ -93,8 +94,9 @@ function renderKillerPage() {
       if (li.dataset.rank === item.rank) {
         console.log(item.rank)
         const div = document.createElement('div')
-        // 创建div->加入图片头像->追加到rank里面
+        // 创建div->添加killer-avatar类名->添加自定义属性name->加入图片头像->追加到rank里面
         div.classList.add('killer-avatar')
+        div.dataset.name = item.name
         div.innerHTML = `
         <img src="${item.img_url}" alt="">
         `
