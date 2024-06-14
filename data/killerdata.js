@@ -1,0 +1,19 @@
+const killerList = [
+  {
+    occupation:'陷阱杀手',
+    name:'埃文·麦克米伦',
+    difficulty:'简单',
+    skills:{
+      one:'技能1',
+      two:'技能2',
+      three:'技能3'
+    },
+    speed:'4.6m/s',
+    rank:'T0',
+    pursuit:100,
+    information:100,
+    control:100,
+    img_url:'',
+    introduction:'运气屠夫'
+  }
+]

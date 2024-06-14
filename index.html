@@ -12,7 +12,7 @@
     }
 
     body {
-      background-image: url('./assests/双一.PNG');
+      background-image: url('./assets/双一.PNG');
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -71,10 +71,14 @@
 <body>
   <h1>黎明杀机5年玩家</h1>
   <div class="body">
-    <div class="welcome-img"><img src="./assests/山村_影_威斯克多_护士长.jpg" alt=""></div>
+    <div class="welcome-img"><img src="./assets/山村_影_威斯克多_护士长.jpg" alt=""></div>
     <div class="btn-jump">黎明杀机，启动!</div>
   </div>
   
-  
+  <script>
+    document.querySelector('.btn-jump').addEventListener('click',function() {
+      location.href = './analyse/index.html'
+    })
+  </script>
 </body>
 </html>
