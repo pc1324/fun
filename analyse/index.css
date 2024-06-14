@@ -13,7 +13,62 @@ body {
   min-height: 1050px;
 }
 /* 网页头部 */
+.head {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: black;
+}
 .head h1 {
   text-align: center;
   color: white;
+}
+.head .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 80px;
+  /* 警惕塌陷margin-top */
+}
+.head .logo h1 {
+  margin-top: 0;
+}
+.head .logo a {
+  display: block;
+  height: 80px;
+  background-image: url(assets/img/dbd-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  font-size: 0;
+}
+/* 导航栏 */
+.nav {
+  background-color: pink;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+}
+.nav ul li {
+  background-color: #ccc;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: '幼圆';
+  font-weight: 600;
+  cursor: pointer;
+  /* li 活动状态 */
+}
+.nav ul li:hover {
+  background-color: #c2c0c0;
+}
+.nav ul li.active {
+  color: red;
 }
