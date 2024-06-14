@@ -72,7 +72,7 @@ body {
 .nav ul li.active {
   color: red;
 }
-/* 网页身体：逃生者、逃生者技能、杀手技能 */
+/* 网页身体：逃生者、杀手、逃生者技能、杀手技能 */
 .body {
   padding: 30px;
 }
@@ -82,6 +82,8 @@ body {
   min-height: 600px;
   border-radius: 15px;
   opacity: 0.9;
+  /* 内容-逃生者页面 */
+  /* 内容-杀手页面 */
 }
 .body .content .survivor {
   display: flex;
@@ -102,4 +104,83 @@ body {
   width: 70%;
   border-radius: 50%;
   border: 1px solid #000;
+}
+.body .content .killer {
+  display: flex;
+  width: 100%;
+  height: 2700px;
+  font-family: '幼圆';
+  font-weight: 700;
+  font-size: 18px;
+  /* 左边梯队 */
+  /* 右边角色 */
+}
+.body .content .killer .left {
+  flex: 1;
+  height: 2700px;
+  background-color: pink;
+}
+.body .content .killer .left ul {
+  display: flex;
+  flex-direction: column;
+  height: 2700px;
+}
+.body .content .killer .left ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.body .content .killer .left ul li:nth-child(1) {
+  background-color: red;
+}
+.body .content .killer .left ul li:nth-child(2) {
+  background-color: #ff4d00;
+}
+.body .content .killer .left ul li:nth-child(3) {
+  background-color: #ffa600;
+}
+.body .content .killer .left ul li:nth-child(4) {
+  background-color: #ffee00;
+}
+.body .content .killer .left ul li:nth-child(5) {
+  background-color: #ffff00;
+}
+.body .content .killer .left ul li:nth-child(6) {
+  background-color: #91ff00;
+}
+.body .content .killer .left ul li:nth-child(7) {
+  background-color: #51ff00;
+}
+.body .content .killer .left ul li:nth-child(8) {
+  background-color: #00ffff;
+}
+.body .content .killer .left ul li:nth-child(9) {
+  background-color: #00c8ff;
+}
+.body .content .killer .right {
+  flex: 9;
+  height: 2700px;
+}
+.body .content .killer .right ul {
+  display: flex;
+  flex-direction: column;
+  height: 2700px;
+}
+.body .content .killer .right ul li {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  /* 杀手头像 */
+}
+.body .content .killer .right ul li .killer-avatar {
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+}
+.body .content .killer .right ul li .killer-avatar img {
+  width: 100%;
+  border-radius: 50%;
 }

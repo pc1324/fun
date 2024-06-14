@@ -13,7 +13,24 @@ const killersList = [
     pursuit:100,
     information:100,
     control:100,
-    img_url:'',
+    img_url:'../analyse/assets/img/占位图片.png',
+    introduction:'运气屠夫'
+  },
+  {
+    occupation:'陷阱杀手',
+    name:'埃文·迈克米伦',
+    difficulty:'简单',
+    skills:{
+      one:'技能1',
+      two:'技能2',
+      three:'技能3'
+    },
+    speed:'4.6m/s',
+    rank:'T1',
+    pursuit:100,
+    information:100,
+    control:100,
+    img_url:'../analyse/assets/img/占位图片.png',
     introduction:'运气屠夫'
   }
 ]
