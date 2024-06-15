@@ -34,23 +34,76 @@ function renderPage(number) {
 
 // 渲染逃生者页面
 function renderSurvivorPage() {
-  // 迭代数组+拼接数组字符串
+  // 1.迭代数组+拼接数组字符串
   const survivorsPage = survivorsList.map(item => {
-    // console.log(item)
     return `
-    <div class="survivor-avatar">
+    <div class="survivor-avatar" data-obj=${JSON.stringify(item)}>
       <img src="${item.img_url}" alt="">
       <span>${item.name}</span>
     </div>
     `
   }).join('')
-  // 插入html
+  // 2.插入内容html
   document.querySelector('.content').innerHTML = `
   <div class="survivor">
     ${survivorsPage}
   </div>
   `
+  // 3.渲染模态框为逃生者版本
+  document.querySelector('.model-box').innerHTML = `
+  <div class="model survivor-model hidden">
+      
+  </div>
+  `
+
+  // 4.为头像增加点击事件
+  const survivorAvatars = Array.from(document.querySelectorAll('.survivor-avatar'))
+  survivorAvatars.forEach(item => {
+    // 每个头像加一个点击事件
+    item.addEventListener('click',()=>{
+      console.log(`当前点击的是：${JSON.parse(item.dataset.obj).name}`)
+      const obj = JSON.parse(item.dataset.obj)
+      // 修改模态框信息
+      document.querySelector('.survivor-model').innerHTML =`
+      <div class="close">X</div>
+      <div class="model-header">
+        <h1>${obj.name}</h1>
+        <div class="avatar">
+          <img src="${obj.img_url}" alt="">
+        </div>
+      </div>
+      <div class="model-body">
+        <div class="introduce">
+          <div class="key">
+            <p>姓名：</p>
+            <p>性别：</p>
+            <p>技能1：</p>
+            <p>技能2：</p>
+            <p>技能3：</p>
+            <p>介绍：</p>
+          </div>
+          <div class="value">
+            <p>${obj.name}</p>
+            <p>${obj.gender}</p>
+            <p>${obj.skills.one}</p>
+            <p>${obj.skills.two}</p>
+            <p>${obj.skills.three}</p>
+            <p>${obj.introduction}</p>
+          </div>
+        </div>
+      </div>
+      `
+      // 绑定隐藏模态框事件(必须在渲染后绑定)
+      document.querySelector('.model-box .close').addEventListener('click',function(){
+        this.parentNode.classList.add('hidden')
+      })
+      // 显示模态框
+      document.querySelector('.survivor-model').classList.remove('hidden')
+    }) // 每个头像加一个点击事件
+  }) // 4.为头像增加点击事件
+
 }
+
 
 // 渲染杀手页面
 function renderKillerPage() {

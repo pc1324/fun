@@ -193,3 +193,89 @@ body {
   width: 100%;
   border-radius: 50%;
 }
+/* 模态框 */
+.model {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  background-color: white;
+  border-radius: 25px;
+  border: 5px solid #ccc;
+  width: 90%;
+  min-height: 95%;
+  max-height: 100%;
+  /* margin-left: -265px;
+      margin-top: -127px; */
+  transform: translate(-50%, -50%);
+  /* 模态框关闭按钮 */
+  /* 模态框头部 */
+  /* 模态框身体 */
+}
+.model.hidden {
+  display: none;
+}
+.model .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 56px;
+  text-align: center;
+  color: #ccc;
+  border-radius: 25px;
+  cursor: pointer;
+  /* background-color: skyblue; */
+}
+.model .close:hover {
+  background-color: #999;
+}
+.model .model-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 模态框头部头像 */
+}
+.model .model-header h1 {
+  height: 50px;
+  line-height: 50px;
+}
+.model .model-header .avatar {
+  width: 200px;
+  height: 200px;
+  /* background-color: skyblue; */
+  border-radius: 50%;
+  border: 5px solid orange;
+  /* 模态框头部图片 */
+}
+.model .model-header .avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+.model .model-body {
+  flex: 1;
+  padding: 10px;
+  /* background-color: skyblue; */
+}
+.model .model-body .introduce {
+  display: flex;
+  /* background-color: pink; */
+}
+.model .model-body .introduce .key {
+  flex: 1;
+}
+.model .model-body .introduce .key p {
+  font-size: 22px;
+  padding-bottom: 30px;
+}
+.model .model-body .introduce .value {
+  flex: 3;
+}
+.model .model-body .introduce .value p {
+  font-size: 22px;
+  padding-bottom: 30px;
+}
