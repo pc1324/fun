@@ -14,7 +14,7 @@ const killersList = [
     pursuit:'C',  // 追击
     information:'A',  // 信息
     control:'B',  // 控场
-    img_url:'../analyse/assets/img/陷阱杀手.png',
+    img_url:'../analyse/assets/img/killers/陷阱杀手.png',
     ability:'捕兽夹',
     introduction:`一名控场型杀手，能利用其力量捕兽夹对全图施加压力并等待逃生者踩中陷阱。
     他的专属技能包括恐慌降临、所向无敌与欣喜若狂，能使其在追杀逃生者的过程中更加高效。`
@@ -34,7 +34,7 @@ const killersList = [
     pursuit:'A',
     information:'B',
     control:'A',
-    img_url:'../analyse/assets/img/幽灵杀手.png',
+    img_url:'../analyse/assets/img//killers/幽灵杀手.png',
     ability:'骷髅丧钟',
     introduction:`一名行动隐秘的杀手，能利用其力量骷髅丧钟隐身或显形。
     他的专属技能包括穷追不舍、血气追踪与暗夜之睛，能赋予他额外的追踪逃生者能力， 使他成为一名高效的捕猎者。`
@@ -54,7 +54,7 @@ const killersList = [
     pursuit:'S',
     information:'C',
     control:'A',
-    img_url:'../analyse/assets/img/电锯杀手.png',
+    img_url:'../analyse/assets/img/killers/电锯杀手.png',
     ability:'电锯',
     introduction:`一名高机动性的杀手，能利用其力量电锯冲刺在短时间内长距离穿行，并立刻击倒逃生者。
     他的专属技能包括耐力持久、光明之眼与工匠，让他进一步增加力量， 在追杀过程中不易丢失目标。`
@@ -74,7 +74,7 @@ const killersList = [
     pursuit:'SSS',
     information:'C',
     control:'A',
-    img_url:'../analyse/assets/img/护士.png',
+    img_url:'../analyse/assets/img/killers/护士.png',
     ability:'斯宾塞的濒死之息',
     introduction:`一名扭曲时空的杀手，能利用其力量斯宾塞的濒死之息闪现穿越障碍物并迅速拉近距离。
     她的专属技能包括喘鸣感知、死亡恐惧与护士的呼唤，能使其削弱逃生者的能力，并追踪受伤状态的逃生者`
@@ -94,7 +94,7 @@ const killersList = [
     pursuit:'B',
     information:'B',
     control:'B',
-    img_url:'../analyse/assets/img/杀人鬼.png',
+    img_url:'../analyse/assets/img/killers/杀人鬼.png',
     ability:'恶魔附身',
     introduction:`一名阴魂不散的杀手 ，能利用其力量恶魔附身从远距离监视逃生者并积累能量。尾随的时间越久，他就越强大越迅速。`
   },
@@ -113,7 +113,7 @@ const killersList = [
     pursuit:'C',
     information:'B',
     control:'B',
-    img_url:'../analyse/assets/img/妖巫.png',
+    img_url:'../analyse/assets/img/killers/妖巫.png',
     ability:'黑化触媒',
     introduction:`一名被诅咒的杀手，能利用其力量黑化触媒设置陷阱，并在触发时传送至该地点。`
   },
@@ -132,7 +132,7 @@ const killersList = [
     pursuit:'B',
     information:'S',
     control:'A',
-    img_url:'../analyse/assets/img/医生.png',
+    img_url:'../analyse/assets/img/killers/医生.png',
     ability:'卡特的电火花',
     introduction:`一名施加神经紊乱的杀手，能利用其力量卡特的电火花触发电荷来摧残逃生者，并最终导致其出现幻觉，在恐惧中尖叫并暴露其位置。`
   },
@@ -151,7 +151,7 @@ const killersList = [
     pursuit:'A',
     information:'C',
     control:'C',
-    img_url:'../analyse/assets/img/女猎手.png',
+    img_url:'../analyse/assets/img/killers/女猎手.png',
     ability:'狩猎飞斧',
     introduction:`一名远程型杀手，能利用其力量狩猎飞斧从远距离伤害逃生者。`
   },
@@ -170,7 +170,7 @@ const killersList = [
     pursuit:'A',
     information:'C',
     control:'C',
-    img_url:'../analyse/assets/img/食人魔.png',
+    img_url:'../analyse/assets/img/killers/食人魔.png',
     ability:'布巴的电锯',
     introduction:`一名挥舞电锯的杀手，能利用其力量布巴的电锯触发致命的暴走状态，直接击倒前进道路中的逃生者。`
   },
@@ -189,7 +189,7 @@ const killersList = [
     pursuit:'B',
     information:'C',
     control:'B',
-    img_url:'../analyse/assets/img/梦魇.png',
+    img_url:'../analyse/assets/img/killers/梦魇.png',
     ability:'梦境恶魔',
     introduction:`一名带来噩梦的杀手，能利用其力量梦境恶魔自动将逃生者拖入自己的梦境世界，其中的逃生者极易受到他的梦境能力影响。他可以使用梦境投影能力快速在地图各处现身并对逃生者施加压力。`
   },
@@ -208,7 +208,7 @@ const killersList = [
     pursuit:'B',
     information:'C',
     control:'A',
-    img_url:'../analyse/assets/img/门徒.png',
+    img_url:'../analyse/assets/img/killers/门徒.png',
     ability:'竖锯的洗礼',
     introduction:`一名带来折磨的杀手，能够通过蹲伏进入隐匿姿态，对逃生者发动短距离伏击。她还可以给濒死逃生者安装下颚撕裂器，强迫其在计时器结束前设法解除装置，否则就将直接死亡。`
   },
@@ -227,7 +227,7 @@ const killersList = [
     pursuit:'S',
     information:'C',
     control:'B',
-    img_url:'../analyse/assets/img/小丑.png',
+    img_url:'../analyse/assets/img/killers/小丑.png',
     ability:'精炼毒酒',
     introduction:`一名富有策略性的杀手，能通过投掷精炼毒酒在短时间制造大范围毒云，以此控制和抓住逃生者。因毒酒而沉醉的逃生者视觉与移动速度会受到影响，并不停大声咳嗽暴露其位置。`
   },
@@ -246,7 +246,7 @@ const killersList = [
     pursuit:'S',
     information:'B',
     control:'A',
-    img_url:'../analyse/assets/img/怨灵.png',
+    img_url:'../analyse/assets/img/killers/怨灵.png',
     ability:'山冈作祟',
     introduction:`一名能够进行相位移动的杀手，能利用其力量山冈作祟穿梭灵界突袭逃生者。她的力量可以使她在无形状态下从某个地点移动至另一地点。`
   },
@@ -265,7 +265,7 @@ const killersList = [
     pursuit:'B',
     information:'A',
     control:'B',
-    img_url:'../analyse/assets/img/军团.png',
+    img_url:'../analyse/assets/img/killers/军团.png',
     ability:'野性狂暴',
     introduction:`一群冷血无情的杀手，能利用其力量野性狂暴武力碾压无助的逃生者。狂暴期间发动攻击将造成持续内伤，并击倒所有未能快速反应的逃生者。`
   },
@@ -284,7 +284,7 @@ const killersList = [
     pursuit:'A',
     information:'A',
     control:'S',
-    img_url:'../analyse/assets/img/瘟疫.png',
+    img_url:'../analyse/assets/img/killers/瘟疫.png',
     ability:'肮脏倾泻',
     introduction:`一名虔诚的杀手，能利用其力量肮脏倾泻从短距离感染逃生者。被感染的逃生者将可能受伤并受到不治状态影响，除非在虔诚之池中治愈自己。`
   },
@@ -303,7 +303,7 @@ const killersList = [
     pursuit:'B',
     information:'B',
     control:'B',
-    img_url:'../analyse/assets/img/鬼面.png',
+    img_url:'../analyse/assets/img/killers/鬼面.png',
     ability:'夜幕',
     introduction:`一名令人毛骨悚然的杀手，能利用其力量夜幕尾随受害者并无声偷袭。受影响的逃生者会变得易受攻击且无法察觉他的存在，必须使用一切感知手段和觉察能力来保护自己免遭他的毒手。`
   },
@@ -322,7 +322,7 @@ const killersList = [
     pursuit:'A',
     information:'B',
     control:'B',
-    img_url:'../analyse/assets/img/魔王.png',
+    img_url:'../analyse/assets/img/killers/魔王.png',
     ability:'来自深渊',
     introduction:`一名身份不明的杀手，能开启多处传送门并在其之间进行远距离移动，同时能利用其力量来自深渊侦测到靠近传送门的逃生者，然后从远距离发动猛扑攻击造成伤害。`
   },
@@ -341,7 +341,7 @@ const killersList = [
     pursuit:'S',
     information:'B',
     control:'A',
-    img_url:'../analyse/assets/img/鬼武士.png',
+    img_url:'../analyse/assets/img/killers/鬼武士.png',
     ability:'山冈之怒',
     introduction:`一名骇人的杀手，将对手击伤后能吸收其鲜血能量，并变身为一只残暴的恶魔，同时能利用其力量山冈之怒高速追击逃生者并用金棒发动致命打击。`
   },
@@ -360,7 +360,7 @@ const killersList = [
     pursuit:'A',
     information:'C',
     control:'C',
-    img_url:'../analyse/assets/img/死亡枪手.png',
+    img_url:'../analyse/assets/img/killers/死亡枪手.png',
     ability:'救赎者',
     introduction:`一名渴望复仇的杀手，能利用其力量救赎者从远处刺中逃生者并收线将其拖回。`
   },
@@ -379,7 +379,7 @@ const killersList = [
     pursuit:'A',
     information:'B',
     control:'C',
-    img_url:'../analyse/assets/img/处刑者.png',
+    img_url:'../analyse/assets/img/killers/处刑者.png',
     ability:'审判仪式',
     introduction:`处刑者是一名操纵地图的杀手，能够用自己制造的各种危险折磨逃生者。受影响的逃生者将无力抵抗其特殊钩子——赎罪牢笼与专属处决——最终审判 。`
   },
@@ -398,7 +398,7 @@ const killersList = [
     pursuit:'SS',
     information:'C',
     control:'S',
-    img_url:'../analyse/assets/img/枯萎者.png',
+    img_url:'../analyse/assets/img/killers/枯萎者.png',
     ability:'枯萎腐败',
     introduction:`一名不可捉摸的杀手，可以依靠其能力枯萎腐败以极快的速度向前冲刺，在撞上障碍物后反弹并伤害逃生者。`
   },
@@ -417,7 +417,7 @@ const killersList = [
     pursuit:'S',
     information:'B',
     control:'B',
-    img_url:'../analyse/assets/img/连体婴.png',
+    img_url:'../analyse/assets/img/killers/连体婴.png',
     ability:'血之羁绊',
     introduction:`一对擅长合作的杀手，能利用其力量血之羁绊彼此分离开来共同狩猎。`
   },
@@ -436,7 +436,7 @@ const killersList = [
     pursuit:'A',
     information:'C',
     control:'C',
-    img_url:'../analyse/assets/img/骗术师.png',
+    img_url:'../analyse/assets/img/killers/骗术师.png',
     ability:'精彩表演',
     introduction:`一名远程杀手，能利用其力量精彩表演迅速投掷出一系列飞刀。`
   },
@@ -455,7 +455,7 @@ const killersList = [
     pursuit:'C',
     information:'B',
     control:'B',
-    img_url:'../analyse/assets/img/追击者.png',
+    img_url:'../analyse/assets/img/killers/追击者.png',
     ability:'T病毒',
     introduction:`一名不屈不挠的杀手，可以从中距离发动触手攻击，并可以让丧尸在区域内游荡作为支援。`
   },
@@ -474,8 +474,160 @@ const killersList = [
     pursuit:'A',
     information:'A',
     control:'A',
-    img_url:'../analyse/assets/img/地狱修士.png',
+    img_url:'../analyse/assets/img/killers/地狱修士.png',
     ability:'痛苦召唤',
     introduction:`一名擅长召唤的杀手，可召唤魔鬼锁链并使用哀痛之盒同时折磨所有逃生者。`
+  },
+  {
+    occupation:'艺术家',
+    name:'卡米娜·莫拉',
+    difficulty:'适中',
+    skills:{
+      one:'冷酷之拥',
+      two:'天灾钩子：痛苦共鸣',
+      three:'厄咒：余痕'
+    },
+    speed:'4.6m/s',
+    terror_radius:'32m',
+    rank:'T2',
+    pursuit:'A',
+    information:'A',
+    control:'A',
+    img_url:'../analyse/assets/img/killers/艺术家.png',
+    ability:'折磨鸦群',
+    introduction:`一名远程侦察型杀手，能够发射恐鸦穿越地图发现并攻击逃生者。`
+  },
+  {
+    occupation:'贞子',
+    name:'山村贞子',
+    difficulty:'困难',
+    skills:{
+      one:'天灾钩子：狂怒之潮',
+      two:'盐水召唤',
+      three:'无情风暴'
+    },
+    speed:'4.6m/s',
+    terror_radius:'24m',
+    rank:'T2.5',
+    pursuit:'B',
+    information:'B',
+    control:'A',
+    img_url:'../analyse/assets/img/killers/贞子.png',
+    ability:'恐惧洪流',
+    introduction:`一名被注入了念写能力的复仇之魂。贞子可以无声且隐形穿越于地图各处，并在准备发动攻击时现身。`
+  },
+  {
+    occupation:'影魔',
+    name:'德鲁安尼',
+    difficulty:'困难',
+    skills:{
+      one:'烟消云散',
+      two:'黑暗启迪',
+      three:'感染之触'
+    },
+    speed:'4.6m/s',
+    terror_radius:'32m',
+    rank:'T2',
+    pursuit:'B',
+    information:'B',
+    control:'A',
+    img_url:'../analyse/assets/img/killers/影魔.png',
+    ability:'黑暗统治',
+    introduction:`影魔是某个曾一度繁荣的社区中的黑暗思想的具现化产物，能在储物柜之间来回传送，并能召唤吞噬一切的黑暗。`
+  },
+  {
+    occupation:'操纵者',
+    name:'阿尔伯特·威斯克',
+    difficulty:'适中',
+    skills:{
+      one:'超人类体能',
+      two:'感知觉醒',
+      three:'终局战术'
+    },
+    speed:'4.6m/s',
+    terror_radius:'40m',
+    rank:'T2',
+    pursuit:'A',
+    information:'B',
+    control:'B',
+    img_url:'../analyse/assets/img/killers/操纵者.png',
+    ability:'病毒跃击',
+    introduction:`阿尔伯特·威斯克是一名注入了Uroboros力量的聪明而无情的操纵者。`
+  },
+  {
+    occupation:'恶骑士',
+    name:'塔尔霍斯·科瓦克斯',
+    difficulty:'适中',
+    skills:{
+      one:'无处可藏',
+      two:'厄咒：直面黑暗',
+      three:'骄傲自大'
+    },
+    speed:'4.6m/s',
+    terror_radius:'32m',
+    rank:'T2.5',
+    pursuit:'A',
+    information:'B',
+    control:'B',
+    img_url:'../analyse/assets/img/killers/恶骑士.png',
+    ability:'国家卫队',
+    introduction:`恶骑士是一个战略性杀手，派他的忠实守卫去捕猎逃生者、破坏战场。`
+  },
+  {
+    occupation:'白骨商人',
+    name:'阿德里亚娜·今井',
+    difficulty:'困难',
+    skills:{
+      one:'好戏开场',
+      two:'哐哐作响',
+      three:'杠杆效应'
+    },
+    speed:'4.6m/s',
+    terror_radius:'32m',
+    rank:'T1',
+    pursuit:'S',
+    information:'A',
+    control:'S',
+    img_url:'../analyse/assets/img/killers/白骨商人.png',
+    ability:'空中之眼',
+    introduction:`白骨商人是名技术型杀手，利用无人机来侦测和束缚目标。`
+  },
+  {
+    occupation:'奇点',
+    name:'赫克斯-A7-13',
+    difficulty:'困难',
+    skills:{
+      one:'基因锁',
+      two:'踯躅不前',
+      three:'机器学习'
+    },
+    speed:'4.6m/s',
+    terror_radius:'32m',
+    rank:'T2',
+    pursuit:'A',
+    information:'A',
+    control:'A',
+    img_url:'../analyse/assets/img/killers/奇点.png',
+    ability:'量子现象',
+    introduction:`奇点是一个无情杀手，能够通过放置生物荚，在地图上快速移动。`
+  },
+  {
+    occupation:'异形',
+    name:'异形',
+    difficulty:'适中',
+    skills:{
+      one:'终极武器',
+      two:'疾速残暴',
+      three:'异形本能'
+    },
+    speed:'4.6m/s',
+    terror_radius:'32m',
+    rank:'T2',
+    pursuit:'A',
+    information:'B',
+    control:'B',
+    img_url:'../analyse/assets/img/killers/异形.png',
+    ability:'隐秘追踪',
+    introduction:`异形是来自遥远星球的无情生物，邪恶、敏捷且狡滑。`
   }
 ]
