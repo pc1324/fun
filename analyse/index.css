@@ -99,11 +99,16 @@ body {
   height: 160px;
   width: 160px;
   border: 1px solid skyblue;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.body .content .survivor .survivor-avatar:hover {
+  background-color: #ccc;
 }
 .body .content .survivor .survivor-avatar img {
   width: 70%;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: 5px solid skyblue;
 }
 .body .content .killer {
   display: flex;
