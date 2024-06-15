@@ -246,12 +246,21 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 300px;
-  height: 300px;
-  background-color: skyblue;
+  width: 250px;
+  height: 250px;
 }
 .body .content .survivor-skills ul li img {
   width: 80%;
+  background: linear-gradient(to bottom, #9a0597, #5c094a);
+  border-radius: 50%;
+  border: 5px solid #000000;
+  cursor: pointer;
+}
+.body .content .survivor-skills ul li img:hover {
+  background: linear-gradient(to bottom, #999, #000);
+}
+.body .content .survivor-skills ul li span {
+  font-weight: 600;
 }
 /* 模态框 */
 .model {

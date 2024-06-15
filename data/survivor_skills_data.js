@@ -1,110 +1,128 @@
 const survivorSkillsList = [
   {
     name:'携手合作',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/携手合作.png',
     introduction:'',
     owner:'德怀特·费菲尔德'
   },
   {
     name:'证明自己',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/证明自己.png',
     introduction:'',
     owner:'德怀特·费菲尔德'
   },
   {
-    name:'群雄领袖',
-    img_url:'../analyse/assets/img/占位图片.png',
+    name:'领袖群雄',
+    img_url:'../analyse/assets/img/survivor_skills/领袖群雄.png',
     introduction:'',
     owner:'德怀特·费菲尔德'
   },
   {
     name:'急速静谧',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/急速静谧.png',
     introduction:'',
     owner:'梅格·托马斯'
   },
   {
     name:'冲刺爆发',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/冲刺爆发.png',
     introduction:'',
     owner:'梅格·托马斯'
   },
   {
     name:'肾上腺素',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/肾上腺素.png',
     introduction:'',
     owner:'梅格·托马斯'
   },
   {
     name:'心灵共鸣',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/心灵共鸣.png',
     introduction:'',
     owner:'克劳黛特·莫莱'
   },
   {
     name:'精研百草',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/精研百草.png',
     introduction:'',
     owner:'克劳黛特·莫莱'
   },
   {
     name:'自我疗愈',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/自我疗愈.png',
     introduction:'',
     owner:'克劳黛特·莫莱'
   },
   {
     name:'钢铁意志',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/钢铁意志.png',
     introduction:'',
     owner:'朴·杰克'
   },
   {
     name:'安抚生灵',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/安抚生灵.png',
     introduction:'',
     owner:'朴·杰克'
   },
   {
     name:'破坏手',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/破坏手.png',
     introduction:'',
     owner:'朴·杰克'
   },
   {
     name:'平稳着陆',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/平稳着陆.png',
     introduction:'',
     owner:'妮娅·卡尔森'
   },
   {
     name:'暴走族',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/暴走族.png',
     introduction:'',
     owner:'妮娅·卡尔森'
   },
   {
     name:'街头范儿',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/街头范儿.png',
     introduction:'',
     owner:'妮娅·卡尔森'
   },
   {
     name:'最后的生还者',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/最后的生还者.png',
     introduction:'',
     owner:'劳丽·斯特罗德'
   },
   {
     name:'魂牵梦绕',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/魂牵梦绕.png',
     introduction:'',
     owner:'劳丽·斯特罗德'
   },
   {
     name:'毁灭打击',
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivor_skills/毁灭打击.png',
     introduction:'',
     owner:'劳丽·斯特罗德'
+  },
+  {
+    name:'稳操胜券',
+    img_url:'../analyse/assets/img/survivor_skills/稳操胜券.png',
+    introduction:'',
+    owner:'埃斯·维斯孔蒂'
+  },
+  {
+    name:'好运会传染',
+    img_url:'../analyse/assets/img/survivor_skills/好运会传染.png',
+    introduction:'',
+    owner:'埃斯·维斯孔蒂'
+  },
+  {
+    name:'惊喜连连',
+    img_url:'../analyse/assets/img/survivor_skills/惊喜连连.png',
+    introduction:'',
+    owner:'埃斯·维斯孔蒂'
   },
 ]

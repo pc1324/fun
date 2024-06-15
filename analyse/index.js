@@ -243,7 +243,55 @@ function renderSurivorSkillPage() {
     </ul>
   </div>
   `
-  // 3.渲染后绑定搜索事件
+
+  // 3.渲染模态框为逃生者技能版本
+  document.querySelector('.model-box').innerHTML = `
+  <div class="model survivor-skill-model hidden">
+
+  </div>
+  `
+
+  // 4.为头像增加点击事件
+  const survivorSkillAvatars = Array.from(document.querySelectorAll('.survivor-skills ul li'))
+  survivorSkillAvatars.forEach(item => {
+    // 每个头像加一个点击事件
+    item.addEventListener('click',()=>{
+      console.log(`当前点击的是：${JSON.parse(item.dataset.obj).name}`)
+      const obj = JSON.parse(item.dataset.obj)
+      // 修改模态框信息
+      document.querySelector('.survivor-skill-model').innerHTML =`
+      <div class="close">X</div>
+      <div class="model-header">
+        <h1>${obj.name}</h1>
+        <div class="avatar">
+          <img src="${obj.img_url}" alt="" style="background: linear-gradient(to bottom, #9a0597, #5c094a);">
+        </div>
+      </div>
+      <div class="model-body">
+        <div class="introduce">
+          <div class="key">
+            <p>技能：</p>
+            <p>所有者：</p>
+            <p>作用：</p>
+          </div>
+          <div class="value">
+            <p>${obj.name}</p>
+            <p>${obj.owner}</p>
+            <p>${obj.introduction}</p>
+          </div>
+        </div>
+      </div>
+      `
+      // 绑定隐藏模态框事件(必须在渲染后绑定)
+      document.querySelector('.model-box .close').addEventListener('click',function(){
+        this.parentNode.classList.add('hidden')
+      })
+      // 显示模态框
+      document.querySelector('.survivor-skill-model').classList.remove('hidden')
+    }) // 每个头像加一个点击事件
+  }) // 4.为头像增加点击事件
+
+  // 5.渲染后绑定搜索事件
   document.querySelector('.btn-search').addEventListener('click',function() {
     console.log(`搜索技能:${this.previousElementSibling.value}`)
     const res = survivorSkillsList.filter(item=>{
