@@ -107,7 +107,7 @@ function renderSurvivorPage() {
 
 // 渲染杀手页面
 function renderKillerPage() {
-  // 插入html
+  // 1.插入html
   document.querySelector('.content').innerHTML = `
   <div class="killer">
     <div class="left">
@@ -138,7 +138,7 @@ function renderKillerPage() {
     </div>
   </div>
   `
-
+  // 2.将杀手头像匹配T级放到右侧li中
   const lis = Array.from(document.querySelectorAll('.killer .right ul li'))
   lis.forEach(li => {
     // 迭代数组+拼接数组字符串
@@ -147,18 +147,78 @@ function renderKillerPage() {
       if (li.dataset.rank === item.rank) {
         console.log(item.rank)
         const div = document.createElement('div')
-        // 创建div->添加killer-avatar类名->添加自定义属性name->加入图片头像->追加到rank里面
+        // 创建div->添加killer-avatar类名->添加自定义属性obj->加入图片头像->追加到rank里面
         div.classList.add('killer-avatar')
-        div.dataset.name = item.name
+        div.dataset.obj = JSON.stringify(item)
         div.innerHTML = `
         <img src="${item.img_url}" alt="">
+        <span>${item.occupation}</span>
         `
         li.appendChild(div)
       }
     })
   })
 
+  // 3.渲染模态框为杀手版本
+  document.querySelector('.model-box').innerHTML = `
+  <div class="model killer-model hidden">
 
+  </div>
+  `
+
+  // 4.为头像增加点击事件
+  const killerAvatars = Array.from(document.querySelectorAll('.killer-avatar'))
+  killerAvatars.forEach(item=>{
+    // 每个头像绑定点击事件
+    item.addEventListener('click',function() {
+      console.log(JSON.parse(item.dataset.obj))
+      const obj = JSON.parse(item.dataset.obj)
+      // 修改模态框信息
+      document.querySelector('.killer-model').innerHTML =`
+      <div class="close">X</div>
+      <div class="model-header">
+        <h1>${obj.name}</h1>
+        <div class="avatar">
+          <img src="${obj.img_url}" alt="">
+        </div>
+      </div>
+      <div class="model-body">
+        <div class="introduce">
+          <div class="key">
+            <p>职业：</p>
+            <p>姓名：</p>
+            <p>难度：</p>
+            <p>技能：</p>
+            <p>速度：</p>
+            <p>恐惧范围：</p>
+            <p>强度：</p>
+            <p>追击/信息/控场能力：</p>
+            <p>杀手力量：</p>
+            <p>介绍：</p>
+          </div>
+          <div class="value">
+            <p>${obj.occupation}</p>
+            <p>${obj.name}</p>
+            <p>${obj.difficulty}</p>
+            <p>${obj.skills.one}、${obj.skills.two}、${obj.skills.three}</p>
+            <p>${obj.speed}</p>
+            <p>${obj.terror_radius}</p>
+            <p>${obj.rank}</p>
+            <p>${obj.pursuit}、${obj.information}、${obj.control}</p>
+            <p>${obj.ability}</p>
+            <p>${obj.introduction}</p>
+          </div>
+        </div>
+      </div>
+      `
+      // 绑定隐藏模态框事件(必须在渲染后绑定)
+      document.querySelector('.model-box .close').addEventListener('click',function(){
+        this.parentNode.classList.add('hidden')
+      })
+      // 显示模态框
+      document.querySelector('.killer-model').classList.remove('hidden')
+    })
+  })
 }
 
 // 渲染逃生者技能页面

@@ -184,14 +184,22 @@ body {
   /* 杀手头像 */
 }
 .body .content .killer .right ul li .killer-avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 5px solid red;
+  font-size: 16px;
+  cursor: pointer;
+}
+.body .content .killer .right ul li .killer-avatar:hover {
+  background-color: #ccc;
 }
 .body .content .killer .right ul li .killer-avatar img {
-  width: 100%;
+  width: 80%;
   border-radius: 50%;
+  border: 5px solid red;
 }
 /* 模态框 */
 .model {
@@ -273,7 +281,7 @@ body {
   padding-bottom: 30px;
 }
 .model .model-body .introduce .value {
-  flex: 3;
+  flex: 5;
 }
 .model .model-body .introduce .value p {
   font-size: 22px;

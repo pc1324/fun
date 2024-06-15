@@ -21,7 +21,7 @@ const killersList = [
   },
   {
     occupation:'幽灵杀手',
-    name:'：菲利普·奥乔莫',
+    name:'菲利普·奥乔莫',
     difficulty:'简单',
     skills:{
       one:'穷追不舍',
