@@ -7,7 +7,7 @@ const survivorsList = [
       two:'技能2',
       three:'技能3'
     },
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivors/德怀特·费菲尔德.png',
     introduction:'运气人类'
   },
   {
@@ -18,7 +18,7 @@ const survivorsList = [
       two:'技能2',
       three:'技能3'
     },
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivors/梅格·托马斯.png',
     introduction:'运气人类'
   },
   {
@@ -29,7 +29,7 @@ const survivorsList = [
       two:'技能2',
       three:'技能3'
     },
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivors/克劳黛特·莫莱.png',
     introduction:'运气人类'
   },
   {
@@ -40,7 +40,7 @@ const survivorsList = [
       two:'技能2',
       three:'技能3'
     },
-    img_url:'../analyse/assets/img/占位图片.png',
+    img_url:'../analyse/assets/img/survivors/杰克·朴.png',
     introduction:'运气人类'
   }
 ]
