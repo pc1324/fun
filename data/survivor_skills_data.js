@@ -2,73 +2,73 @@ const survivorSkillsList = [
   {
     name:'携手合作',
     img_url:'../analyse/assets/img/survivor_skills/携手合作.png',
-    introduction:'',
+    introduction:`解锁个人气场解读能力的潜力。同伴在20/28/36米范围内时，他们的气场就会在你眼前显现`,
     owner:'德怀特·费菲尔德'
   },
   {
     name:'证明自己',
     img_url:'../analyse/assets/img/survivor_skills/证明自己.png',
-    introduction:'',
+    introduction:`使4米范围内正在修理发电机的逃生者修理速度增加15%。该效果同样适用于范围内的所有逃生者。合作行动血点增加50/75/100%。逃生者每次只能受到一个证明自己效果的影响`,
     owner:'德怀特·费菲尔德'
   },
   {
     name:'领袖群雄',
     img_url:'../analyse/assets/img/survivor_skills/领袖群雄.png',
-    introduction:'',
+    introduction:`你可以组织一个合作效率更高的团队。当其他逃生者在距离你8米范围内时，他们的治疗，破坏，脱钩，清洁，打开出口门以及箱子解锁速度增加15/20/25%。逃生者一次只能受到一次领导效果影响。在离开领导技能的有效额外范围后，此效果在其他逃生者身上持续15秒。`,
     owner:'德怀特·费菲尔德'
   },
   {
     name:'急速静谧',
     img_url:'../analyse/assets/img/survivor_skills/急速静谧.png',
-    introduction:'',
+    introduction:`当你快速跨越障碍或者藏入柜子里的时候，你不会像其他人那样发出很多声响。跨越和隐藏的声响觉察范围缩小100%。技能效果每30/25/20秒只能触发一次。`,
     owner:'梅格·托马斯'
   },
   {
     name:'冲刺爆发',
     img_url:'../analyse/assets/img/survivor_skills/冲刺爆发.png',
-    introduction:'',
+    introduction:`开始奔跑时，以正常跑速的150%的速度进行冲刺，持续3秒。触发疲劳状态并持续60/50/40秒。当你处于疲劳状态，不能使用该技能。跑步时不可从疲劳状态恢复。`,
     owner:'梅格·托马斯'
   },
   {
     name:'肾上腺素',
     img_url:'../analyse/assets/img/survivor_skills/肾上腺素.png',
-    introduction:'',
+    introduction:`在马上就要成功逃脱时，你得到了一股未知的能量帮助。当逃生大门通电时，瞬间从濒死恢复至受伤，或从受伤恢复至健康状态，并以正常跑速的150%的速度进行冲刺，持续5秒。若逃生大门打开时你无法行动，肾上腺素技能会在你被解救后立刻生效。如果你处于梦境中，肾上腺素会在激活时唤醒你。肾上腺素无视疲劳状态，但会触发疲劳状态，并持续60/50/40秒。跑步时不会从疲劳状态中恢复。`,
     owner:'梅格·托马斯'
   },
   {
     name:'心灵共鸣',
     img_url:'../analyse/assets/img/survivor_skills/心灵共鸣.png',
-    introduction:'',
+    introduction:`解锁个人气场解读能力的潜力。64/96/128米范围内，濒死或受伤同伴的气场会显现出来。当同伴和杀手进行直接接触时，心灵共鸣技能不能显现他们的气场。`,
     owner:'克劳黛特·莫莱'
   },
   {
     name:'精研百草',
     img_url:'../analyse/assets/img/survivor_skills/精研百草.png',
-    introduction:'',
+    introduction:`你将在篝火附近找到的植物制成止血酊剂。治疗速度和治疗道具的效率增加11/22/33%。`,
     owner:'克劳黛特·莫莱'
   },
   {
     name:'自我疗愈',
     img_url:'../analyse/assets/img/survivor_skills/自我疗愈.png',
-    introduction:'',
+    introduction:`解锁不用消耗治疗道具即可治疗自己的能力。治疗速度为正常速度的50%。用治疗道具自我治疗时效率会提高10/15/20%。`,
     owner:'克劳黛特·莫莱'
   },
   {
     name:'钢铁意志',
     img_url:'../analyse/assets/img/survivor_skills/钢铁意志.png',
-    introduction:'',
+    introduction:`你可以集中精神进入冥想状态来减轻一部分痛苦。因受伤引起的痛苦呻吟减少50/75/100%。`,
     owner:'朴·杰克'
   },
   {
     name:'安抚生灵',
     img_url:'../analyse/assets/img/survivor_skills/安抚生灵.png',
-    introduction:'',
+    introduction:`动物们看似很信任你，因为即使你在旁边它们也不会因为惊吓而逃跑。降低80/90/100%惊扰林地生物的几率。安抚生灵能让你克服惊叫的冲动。`,
     owner:'朴·杰克'
   },
   {
     name:'破坏手',
     img_url:'../analyse/assets/img/survivor_skills/破坏手.png',
-    introduction:'',
+    introduction:`解锁气场解读能力。若有逃生者被搬运，则能看到逃生者被扛起地点56米范围内钩子的气场。解锁不用工具箱即可破坏钩子的能力。不用工具箱破坏钩子需要2.5秒。破坏动作拥有90/75/60秒的冷却时间。`,
     owner:'朴·杰克'
   },
   {
@@ -124,5 +124,59 @@ const survivorSkillsList = [
     img_url:'../analyse/assets/img/survivor_skills/惊喜连连.png',
     introduction:'',
     owner:'埃斯·维斯孔蒂'
+  },
+  {
+    name:'末日残兵',
+    img_url:'../analyse/assets/img/survivor_skills/末日残兵.png',
+    introduction:'',
+    owner:'威廉·比尔·奥弗贝克'
+  },
+  {
+    name:'时不我待',
+    img_url:'../analyse/assets/img/survivor_skills/时不我待.png',
+    introduction:'',
+    owner:'威廉·比尔·奥弗贝克'
+  },
+  {
+    name:'坚不可摧',
+    img_url:'../analyse/assets/img/survivor_skills/坚不可摧.png',
+    introduction:'',
+    owner:'威廉·比尔·奥弗贝克'
+  },
+  {
+    name:'技术员',
+    img_url:'../analyse/assets/img/survivor_skills/技术员.png',
+    introduction:'',
+    owner:'凤敏'
+  },
+  {
+    name:'轻盈敏捷',
+    img_url:'../analyse/assets/img/survivor_skills/轻盈敏捷.png',
+    introduction:'',
+    owner:'凤敏'
+  },
+  {
+    name:'警戒',
+    img_url:'../analyse/assets/img/survivor_skills/警戒.png',
+    introduction:'',
+    owner:'凤敏'
+  },
+  {
+    name:'生死与共',
+    img_url:'../analyse/assets/img/survivor_skills/生死与共.png',
+    introduction:'',
+    owner:'大卫·金'
+  },
+  {
+    name:'钢筋铁骨',
+    img_url:'../analyse/assets/img/survivor_skills/钢筋铁骨.png',
+    introduction:'',
+    owner:'大卫·金'
+  },
+  {
+    name:'不痛不痒',
+    img_url:'../analyse/assets/img/survivor_skills/不痛不痒.png',
+    introduction:'',
+    owner:'大卫·金'
   },
 ]

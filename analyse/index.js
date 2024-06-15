@@ -60,11 +60,11 @@ function renderSurvivorPage() {
   const survivorAvatars = Array.from(document.querySelectorAll('.survivor-avatar'))
   survivorAvatars.forEach(item => {
     // 每个头像加一个点击事件
-    item.addEventListener('click',()=>{
+    item.addEventListener('click', () => {
       console.log(`当前点击的是：${JSON.parse(item.dataset.obj).name}`)
       const obj = JSON.parse(item.dataset.obj)
       // 修改模态框信息
-      document.querySelector('.survivor-model').innerHTML =`
+      document.querySelector('.survivor-model').innerHTML = `
       <div class="close">X</div>
       <div class="model-header">
         <h1>${obj.name}</h1>
@@ -94,7 +94,7 @@ function renderSurvivorPage() {
       </div>
       `
       // 绑定隐藏模态框事件(必须在渲染后绑定)
-      document.querySelector('.model-box .close').addEventListener('click',function(){
+      document.querySelector('.model-box .close').addEventListener('click', function () {
         this.parentNode.classList.add('hidden')
       })
       // 显示模态框
@@ -143,7 +143,7 @@ function renderKillerPage() {
     killersList.forEach(item => {
       // console.log(item)
       if (li.dataset.rank === item.rank) {
-        console.log(item.rank)
+        // console.log(item.rank)
         const div = document.createElement('div')
         // 创建div->添加killer-avatar类名->添加自定义属性obj->加入图片头像->追加到rank里面
         div.classList.add('killer-avatar')
@@ -166,13 +166,13 @@ function renderKillerPage() {
 
   // 4.为头像增加点击事件
   const killerAvatars = Array.from(document.querySelectorAll('.killer-avatar'))
-  killerAvatars.forEach(item=>{
+  killerAvatars.forEach(item => {
     // 每个头像绑定点击事件
-    item.addEventListener('click',function() {
+    item.addEventListener('click', function () {
       console.log(JSON.parse(item.dataset.obj))
       const obj = JSON.parse(item.dataset.obj)
       // 修改模态框信息
-      document.querySelector('.killer-model').innerHTML =`
+      document.querySelector('.killer-model').innerHTML = `
       <div class="close">X</div>
       <div class="model-header">
         <h1>${obj.name}</h1>
@@ -210,7 +210,7 @@ function renderKillerPage() {
       </div>
       `
       // 绑定隐藏模态框事件(必须在渲染后绑定)
-      document.querySelector('.model-box .close').addEventListener('click',function(){
+      document.querySelector('.model-box .close').addEventListener('click', function () {
         this.parentNode.classList.add('hidden')
       })
       // 显示模态框
@@ -221,8 +221,8 @@ function renderKillerPage() {
 
 // 渲染逃生者技能页面
 function renderSurivorSkillPage() {
-   // 1.迭代数组+拼接数组字符串
-   const survivorSkillsPage = survivorSkillsList.map(item => {
+  // 1.迭代数组+拼接数组字符串
+  const survivorSkillsPage = survivorSkillsList.map(item => {
     return `
     <li data-obj=${JSON.stringify(item)}>
       <img src="${item.img_url}" alt="">
@@ -255,11 +255,11 @@ function renderSurivorSkillPage() {
   const survivorSkillAvatars = Array.from(document.querySelectorAll('.survivor-skills ul li'))
   survivorSkillAvatars.forEach(item => {
     // 每个头像加一个点击事件
-    item.addEventListener('click',()=>{
+    item.addEventListener('click', () => {
       console.log(`当前点击的是：${JSON.parse(item.dataset.obj).name}`)
       const obj = JSON.parse(item.dataset.obj)
       // 修改模态框信息
-      document.querySelector('.survivor-skill-model').innerHTML =`
+      document.querySelector('.survivor-skill-model').innerHTML = `
       <div class="close">X</div>
       <div class="model-header">
         <h1>${obj.name}</h1>
@@ -275,15 +275,15 @@ function renderSurivorSkillPage() {
             <p>作用：</p>
           </div>
           <div class="value">
-            <p>${obj.name}</p>
-            <p>${obj.owner}</p>
+            <p><a href="https://deadbydaylight.fandom.com/zh/wiki/${obj.name}" target="_blank">${obj.name}<a></p>
+            <p><a href="https://deadbydaylight.fandom.com/zh/wiki/${obj.owner}" targrt="_blank">${obj.owner}</a></p>
             <p>${obj.introduction}</p>
           </div>
         </div>
       </div>
       `
       // 绑定隐藏模态框事件(必须在渲染后绑定)
-      document.querySelector('.model-box .close').addEventListener('click',function(){
+      document.querySelector('.model-box .close').addEventListener('click', function () {
         this.parentNode.classList.add('hidden')
       })
       // 显示模态框
@@ -292,15 +292,15 @@ function renderSurivorSkillPage() {
   }) // 4.为头像增加点击事件
 
   // 5.渲染后绑定搜索事件
-  document.querySelector('.btn-search').addEventListener('click',function() {
+  document.querySelector('.btn-search').addEventListener('click', function () {
     console.log(`搜索技能:${this.previousElementSibling.value}`)
-    const res = survivorSkillsList.filter(item=>{
+    const res = survivorSkillsList.filter(item => {
       // 检测过滤，返回所有技能名中包含搜索字符串的
       // console.log(item.name)
       // console.log(item.name.indexOf(this.previousElementSibling.value)!==-1)
       // console.log(item.owner.indexOf(this.previousElementSibling.value)!==-1)
-      return (item.name.indexOf(this.previousElementSibling.value)!==-1 || item.owner.indexOf(this.previousElementSibling.value)!==-1)
-    }).map(item=>{
+      return (item.name.indexOf(this.previousElementSibling.value) !== -1 || item.owner.indexOf(this.previousElementSibling.value) !== -1)
+    }).map(item => {
       return `
       <li data-obj=${JSON.stringify(item)}>
         <img src="${item.img_url}" alt="">
@@ -314,7 +314,45 @@ function renderSurivorSkillPage() {
       ${res}
     </ul>
     `
-    
+    // 4.为头像增加点击事件
+    const survivorSkillAvatars = Array.from(document.querySelectorAll('.survivor-skills ul li'))
+    survivorSkillAvatars.forEach(item => {
+      // 每个头像加一个点击事件
+      item.addEventListener('click', () => {
+        console.log(`当前点击的是：${JSON.parse(item.dataset.obj).name}`)
+        const obj = JSON.parse(item.dataset.obj)
+        // 修改模态框信息
+        document.querySelector('.survivor-skill-model').innerHTML = `
+      <div class="close">X</div>
+      <div class="model-header">
+        <h1>${obj.name}</h1>
+        <div class="avatar">
+          <img src="${obj.img_url}" alt="" style="background: linear-gradient(to bottom, #9a0597, #5c094a);">
+        </div>
+      </div>
+      <div class="model-body">
+        <div class="introduce">
+          <div class="key">
+            <p>技能：</p>
+            <p>所有者：</p>
+            <p>作用：</p>
+          </div>
+          <div class="value">
+          <p><a href="https://deadbydaylight.fandom.com/zh/wiki/${obj.name}" target="_blank">${obj.name}<a></p>
+          <p><a href="https://deadbydaylight.fandom.com/zh/wiki/${obj.owner}" targrt="_blank">${obj.owner}</a></p>
+            <p>${obj.introduction}</p>
+          </div>
+        </div>
+      </div>
+      `
+        // 绑定隐藏模态框事件(必须在渲染后绑定)
+        document.querySelector('.model-box .close').addEventListener('click', function () {
+          this.parentNode.classList.add('hidden')
+        })
+        // 显示模态框
+        document.querySelector('.survivor-skill-model').classList.remove('hidden')
+      }) // 每个头像加一个点击事件
+    }) // 4.为头像增加点击事件
   })
 }
 

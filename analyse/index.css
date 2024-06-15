@@ -7,6 +7,9 @@ ol li,
 ul li {
   list-style: none;
 }
+a {
+  color: #d8d840;
+}
 body {
   background: linear-gradient(to bottom, #999, #000);
   background-repeat: no-repeat;
@@ -248,6 +251,7 @@ body {
   flex-direction: column;
   width: 250px;
   height: 250px;
+  cursor: pointer;
 }
 .body .content .survivor-skills ul li img {
   width: 80%;
@@ -261,6 +265,7 @@ body {
 }
 .body .content .survivor-skills ul li span {
   font-weight: 600;
+  font-size: 22px;
 }
 /* 模态框 */
 .model {
