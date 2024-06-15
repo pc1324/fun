@@ -101,9 +101,7 @@ function renderSurvivorPage() {
       document.querySelector('.survivor-model').classList.remove('hidden')
     }) // 每个头像加一个点击事件
   }) // 4.为头像增加点击事件
-
 }
-
 
 // 渲染杀手页面
 function renderKillerPage() {
@@ -223,12 +221,53 @@ function renderKillerPage() {
 
 // 渲染逃生者技能页面
 function renderSurivorSkillPage() {
-  // 迭代数组+拼接数组字符串
+   // 1.迭代数组+拼接数组字符串
+   const survivorSkillsPage = survivorSkillsList.map(item => {
+    return `
+    <li data-obj=${JSON.stringify(item)}>
+      <img src="${item.img_url}" alt="">
+      <span>${item.name}</span>
+    </li>
+    `
+  }).join('')
 
-  // 插入html
+  // 2.插入html
   document.querySelector('.content').innerHTML = `
-  2
+  <div class="survivor-skills">
+    <div class="search">
+      <input name="search-survivor-skills" placeholder="请输入技能|所有者">
+      <div class="btn-search">搜索</div>
+    </div>
+    <ul>
+      ${survivorSkillsPage}
+    </ul>
+  </div>
   `
+  // 3.渲染后绑定搜索事件
+  document.querySelector('.btn-search').addEventListener('click',function() {
+    console.log(`搜索技能:${this.previousElementSibling.value}`)
+    const res = survivorSkillsList.filter(item=>{
+      // 检测过滤，返回所有技能名中包含搜索字符串的
+      // console.log(item.name)
+      // console.log(item.name.indexOf(this.previousElementSibling.value)!==-1)
+      // console.log(item.owner.indexOf(this.previousElementSibling.value)!==-1)
+      return (item.name.indexOf(this.previousElementSibling.value)!==-1 || item.owner.indexOf(this.previousElementSibling.value)!==-1)
+    }).map(item=>{
+      return `
+      <li data-obj=${JSON.stringify(item)}>
+        <img src="${item.img_url}" alt="">
+        <span>${item.name}</span>
+      </li>
+      `
+    }).join('')
+    // console.log(res)
+    document.querySelector('.survivor-skills ul').innerHTML = `
+    <ul>
+      ${res}
+    </ul>
+    `
+    
+  })
 }
 
 // 渲染杀手技能页面

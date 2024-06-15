@@ -84,6 +84,7 @@ body {
   opacity: 0.9;
   /* 内容-逃生者页面 */
   /* 内容-杀手页面 */
+  /* 内容-逃生者技能页面 */
 }
 .body .content .survivor {
   display: flex;
@@ -99,7 +100,6 @@ body {
   align-items: center;
   height: 160px;
   width: 160px;
-  border: 1px solid skyblue;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -202,6 +202,56 @@ body {
   width: 80%;
   border-radius: 50%;
   border: 5px solid red;
+}
+.body .content .survivor-skills {
+  /* 搜索区 */
+}
+.body .content .survivor-skills .search {
+  padding: 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  /* 搜索栏 */
+}
+.body .content .survivor-skills .search input {
+  width: 300px;
+  height: 50px;
+  outline: 0;
+  border: 5px solid #ccc;
+  background-color: transparent;
+  font-size: 22px;
+  border-radius: 15px;
+}
+.body .content .survivor-skills .search .btn-search {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #0f60d1;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+.body .content .survivor-skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.body .content .survivor-skills ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  background-color: skyblue;
+}
+.body .content .survivor-skills ul li img {
+  width: 80%;
 }
 /* 模态框 */
 .model {
