@@ -80,7 +80,7 @@ const killersList = [
     她的专属技能包括喘鸣感知、死亡恐惧与护士的呼唤，能使其削弱逃生者的能力，并追踪受伤状态的逃生者`
   },
   {
-    occupation:'杀人鬼',
+    occupation:'迈克尔·迈尔斯',
     name:'迈克尔·迈尔斯',
     difficulty:'适中',
     skills:{
@@ -94,7 +94,7 @@ const killersList = [
     pursuit:'B',
     information:'B',
     control:'B',
-    img_url:'../analyse/assets/img/killers/杀人鬼.png',
+    img_url:'../analyse/assets/img/killers/迈克尔·迈尔斯.png',
     ability:'恶魔附身',
     introduction:`一名阴魂不散的杀手 ，能利用其力量恶魔附身从远距离监视逃生者并积累能量。尾随的时间越久，他就越强大越迅速。`
   },
