@@ -276,7 +276,7 @@ function renderSurivorSkillPage() {
           </div>
           <div class="value">
             <p><a href="https://deadbydaylight.fandom.com/zh/wiki/${obj.name}" target="_blank">${obj.name}<a></p>
-            <p><a href="https://deadbydaylight.fandom.com/zh/wiki/${obj.owner}" targrt="_blank">${obj.owner}</a></p>
+            <p><a href="https://deadbydaylight.fandom.com/zh/wiki/${obj.owner}" target="_blank">${obj.owner}</a></p>
             <p>${obj.introduction}</p>
           </div>
         </div>
@@ -339,7 +339,7 @@ function renderSurivorSkillPage() {
           </div>
           <div class="value">
           <p><a href="https://deadbydaylight.fandom.com/zh/wiki/${obj.name}" target="_blank">${obj.name}<a></p>
-          <p><a href="https://deadbydaylight.fandom.com/zh/wiki/${obj.owner}" targrt="_blank">${obj.owner}</a></p>
+          <p><a href="https://deadbydaylight.fandom.com/zh/wiki/${obj.owner}" target="_blank">${obj.owner}</a></p>
             <p>${obj.introduction}</p>
           </div>
         </div>
