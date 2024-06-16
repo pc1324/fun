@@ -88,6 +88,7 @@ body {
   /* 内容-逃生者页面 */
   /* 内容-杀手页面 */
   /* 内容-逃生者技能页面 */
+  /* 内容-杀手技能页面 */
 }
 .body .content .survivor {
   display: flex;
@@ -264,6 +265,67 @@ body {
   background: linear-gradient(to bottom, #999, #000);
 }
 .body .content .survivor-skills ul li span {
+  font-weight: 600;
+  font-size: 22px;
+}
+.body .content .killer-skills {
+  /* 搜索区 */
+}
+.body .content .killer-skills .search {
+  padding: 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  /* 搜索栏 */
+}
+.body .content .killer-skills .search input {
+  width: 300px;
+  height: 50px;
+  outline: 0;
+  border: 5px solid #ccc;
+  background-color: transparent;
+  font-size: 22px;
+  border-radius: 15px;
+}
+.body .content .killer-skills .search .btn-search {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #0f60d1;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+.body .content .killer-skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.body .content .killer-skills ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+}
+.body .content .killer-skills ul li img {
+  width: 80%;
+  background: linear-gradient(to bottom, #9a0597, #5c094a);
+  border-radius: 50%;
+  border: 5px solid #000000;
+  cursor: pointer;
+}
+.body .content .killer-skills ul li img:hover {
+  background: linear-gradient(to bottom, #999, #000);
+}
+.body .content .killer-skills ul li span {
   font-weight: 600;
   font-size: 22px;
 }

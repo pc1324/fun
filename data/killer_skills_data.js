@@ -1,0 +1,20 @@
+const killerSkillsList = [
+  {
+    name:'恐慌降临',
+    img_url:'../analyse/assets/img/killer_skills/恐慌降临.png',
+    introduction:`解锁个人气场解读能力的潜力。同伴在20/28/36米范围内时，他们的气场就会在你眼前显现`,
+    owner:'陷阱杀手'
+  },
+  {
+    name:'所向无敌',
+    img_url:'../analyse/assets/img/killer_skills/所向无敌.png',
+    introduction:`使4米范围内正在修理发电机的逃生者修理速度增加15%。该效果同样适用于范围内的所有逃生者。合作行动血点增加50/75/100%。逃生者每次只能受到一个证明自己效果的影响`,
+    owner:'陷阱杀手'
+  },
+  {
+    name:'欣喜若狂',
+    img_url:'../analyse/assets/img/killer_skills/欣喜若狂.png',
+    introduction:`你可以组织一个合作效率更高的团队。当其他逃生者在距离你8米范围内时，他们的治疗，破坏，脱钩，清洁，打开出口门以及箱子解锁速度增加15/20/25%。逃生者一次只能受到一次领导效果影响。在离开领导技能的有效额外范围后，此效果在其他逃生者身上持续15秒。`,
+    owner:'陷阱杀手'
+  },
+]
