@@ -292,14 +292,14 @@ function renderSurivorSkillPage() {
   }) // 4.为头像增加点击事件
 
   // 5.渲染后绑定搜索事件
-  document.querySelector('.btn-search').addEventListener('click', function () {
-    console.log(`搜索技能:${this.previousElementSibling.value}`)
+  document.querySelector('.btn-search').addEventListener('click', function (e) {
+    console.log(`搜索技能:${e.target.previousElementSibling.value}`)
     const res = survivorSkillsList.filter(item => {
       // 检测过滤，返回所有技能名中包含搜索字符串的
       // console.log(item.name)
       // console.log(item.name.indexOf(this.previousElementSibling.value)!==-1)
       // console.log(item.owner.indexOf(this.previousElementSibling.value)!==-1)
-      return (item.name.indexOf(this.previousElementSibling.value) !== -1 || item.owner.indexOf(this.previousElementSibling.value) !== -1)
+      return (item.name.indexOf(e.target.previousElementSibling.value) !== -1 || item.owner.indexOf(e.target.previousElementSibling.value) !== -1)
     }).map(item => {
       return `
       <li data-obj=${JSON.stringify(item)}>
@@ -353,6 +353,13 @@ function renderSurivorSkillPage() {
         document.querySelector('.survivor-skill-model').classList.remove('hidden')
       }) // 每个头像加一个点击事件
     }) // 4.为头像增加点击事件
+  })
+
+  // 6.回车也触发搜索事件
+  document.querySelector('.survivor-skills .search input').addEventListener('keydown',function(e) {
+    if(e.key === 'Enter'){
+      document.querySelector('.btn-search').click()
+    }
   })
 }
 
@@ -491,10 +498,12 @@ function renderKillerSkillPage() {
       }) // 每个头像加一个点击事件
     }) // 4.为头像增加点击事件
   })
+
+  // 6.回车也触发搜索事件
+  document.querySelector('.killer-skills .search input').addEventListener('keydown',function(e) {
+    if(e.key === 'Enter'){
+      document.querySelector('.btn-search').click()
+    }
+  })
 }
-// 随机数函数
-function getRandom(N, M) {
-  N = N || 0
-  M = M || 0
-  return Math.floor(Math.random() * (M - N + 1) + N)
-}
+
